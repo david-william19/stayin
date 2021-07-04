@@ -19,11 +19,10 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('tempat');
+            $table->string('tempat_lahir');
             $table->string('tanggal_lahir');
-            $table->string('lokasi');
-            $table->boolean('is_admin');
-            $table->boolean('is_mitra');
+            $table->boolean('is_admin')->nullable();
+            $table->boolean('is_mitra')->nullable();
             $table->string('lokasi_terkini');
             $table->rememberToken();
             $table->timestamps();
