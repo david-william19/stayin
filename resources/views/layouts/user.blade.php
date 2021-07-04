@@ -47,11 +47,6 @@
                 <img src="{{asset('images/logo.png')}}" alt="logo" width="120" />
                 <p class="ml-4 mt-3">Forget Your Work, Let’s Start New Experience!</p>
             </div>
-            <div class="navbar-nav navbar-light d-flex flex-row">
-                <a class="nav-item nav-link underline mr-4" href="{{route('home')}}">New Experience</a>
-                <a class="nav-item nav-link underline" href="{{route('packages')}}">Packages</a>
-            </div>
-
             @if (Auth::check())
             <div class="navbar-nav d-flex flex-row">
                 <a class="nav-item nav-link mr-4" href="">Hi, {{Auth::User()->name}}</a>

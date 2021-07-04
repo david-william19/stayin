@@ -23,11 +23,13 @@ Auth::routes();
 Route::get('/', function () {
     $product = Product::all();
     $rating = Rating::all();
-    return view('Users.home', compact("product", "rating"));
+    return view('Users.packages', compact("product", "rating"));
 })->name("home");
 
 Route::get('/packages', function () {
-    return view('Users.packages');
+    $product = Product::all();
+    $rating = Rating::all();
+    return view('Users.packages', compact("product", "rating"));
 })->name('packages');
 
 Route::get('/search', function () {

@@ -39,10 +39,12 @@
         </div>
         <div class="col-3 d-flex justify-content-center align-items-center">
             <div>
-                <button class="btn btn-search">
-                    <i class="fas fa-search"></i>
-                    Search
-                </button>
+                <a href="{{route('search')}}">
+                    <button class="btn btn-search">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -67,7 +69,7 @@
             </div>
             <div class="d-flex justify-content-end">
                 <a href="" class="btn-details p-3 mr-3">See Details</a>
-                <a href="" class="btn-book p-3">Book Now</a>
+                <a href="{{route('detail')}}" class="btn-book p-3">Book Now</a>
             </div>
         </div>
     </div>
@@ -80,7 +82,7 @@
             </div>
             <div class="d-flex justify-content-end">
                 <a href="" class="btn-details p-3 mr-3">See Details</a>
-                <a href="" class="btn-book p-3">Book Now</a>
+                <a href="{{route('detail')}}" class="btn-book p-3">Book Now</a>
             </div>
         </div>
     </div>
@@ -93,7 +95,7 @@
     <div class="row">
         <div class="col d-flex justify-content-between align-items-center">
 
-            <h4 class="mb-3">why Stay with <span>StayIn</span></h4>
+            <h4 class="mb-3">Why choose <span>Unix</span></h4>
         </div>
     </div>
     <div class="row mb-3">

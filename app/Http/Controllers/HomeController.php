@@ -29,7 +29,7 @@ class HomeController extends Controller
     {
         $product = Product::all();
         $rating = Rating::all();
-        return view('Users.home', compact("product", "rating"));
+        return view('Users.packages', compact("product", "rating"));
     }
 
     public function adminHome()
