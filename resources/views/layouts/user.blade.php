@@ -22,7 +22,7 @@
     <link href="{{asset('css/style-packages.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/4abf6983ae.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
@@ -40,13 +40,9 @@
     <!-- navigation section -->
     <nav>
         <div class="container-fluid d-flex justify-content-around align-items-center py-3">
-            <div class="logo">
-                <img src="{{asset('images/logo.png')}}" alt="logo" width="68" />
-            </div>
-            <div class="navbar-nav navbar-light d-flex flex-row">
-                <a class="nav-item nav-link underline " href="#">New Experience</a>
-                <a class="nav-item nav-link underline mx-5" href="#">Place to Stay</a>
-                <a class="nav-item nav-link underline" href="#">Packages</a>
+            <div class="logo d-flex">
+                <img src="{{asset('images/logo.png')}}" alt="logo" width="120" />
+                <p class="ml-4 mt-3">Forget Your Work, Let’s Start New Experience!</p>
             </div>
             <div class="navbar-nav d-flex flex-row">
                 <a class="nav-item nav-link mr-4" href="#">Login</a>
@@ -61,6 +57,10 @@
             @yield('content')
         </main>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

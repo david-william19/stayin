@@ -143,9 +143,9 @@
 <!-- bagian content Recommendations -->
 <div class="container mt-5">
     <div class="row">
-        <div class="col d-flex justify-content-between align-items-center">
-            <h4>Recommendations</h4>
-            <a href="#" class="font-weight-light">View All</a>
+        <div class="col">
+            <h4 class="text-center">Recommendations</h4>
+            <p class="text-center font-weight-light">Recommendations for unique experiences that you can try with the lowest rate of Covid-19 cases.</p>
         </div>
     </div>
     <div class="row">
@@ -164,7 +164,20 @@
 
 <!-- bagian content Customer Satisfaction -->
 <div class="container mt-5">
-    <p>bagian customer satisfaction</p>
+    <h4>CUSTOMER SATISFACTION</h4>
+    <div class="row">
+        <div class="col">
+            <img src="{{asset('images/satisfaction.png')}}" width="400" class="my-4" alt="">
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+            <div>
+                <h5>Family Trip Labuan Bajo</h5>
+                <p class="comment">“Nice Trip with StayIn! I really recommended this new experience.”</p>
+                <p class="text-muted">- Aa Rafatar</p>
+                <p class="text-muted">23 Juli 2021</p>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- bagian akhir content Customer Satisfaction -->
 

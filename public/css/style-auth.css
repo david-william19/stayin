@@ -63,3 +63,26 @@ b{
     font-size: 14px;
     color: #1891AC;
 }
+
+.check{
+    border-radius: 20px;
+    border: 1px solid #253C6F;
+}
+
+.term{
+    width: 250px;
+}
+
+.btn-continue{
+    padding: 10px;
+    color: #fff;
+    background: #35539b;
+    border-radius: 20px;
+    height: 45px;
+    width: 200px;
+    text-align: center;
+}
+
+.disabled{
+    background: #ACACAC ;
+}

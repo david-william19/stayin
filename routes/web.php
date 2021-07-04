@@ -28,6 +28,15 @@ Route::get('/', function () {
 Route::get('/packages', function () {
     return view('Users.packages');
 });
+Route::get('/search', function () {
+    return view('Users.search');
+});
+Route::get('/detail', function () {
+    return view('Users.details');
+});
+Route::get('/pembayaran', function () {
+    return view('Users.pembayaran.pembayaran-4');
+});
 
 Route::get('/placetostay', function () {
     $product = Product::all();

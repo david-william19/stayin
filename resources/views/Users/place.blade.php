@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset( 'css/style.css' )}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/4abf6983ae.css">
+    <script src="https://kit.fontawesome.com/703b61097a.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
@@ -96,7 +96,7 @@
             </div>
             <div class="col-3 d-flex justify-content-center align-items-center">
                 <div>
-                    <button class="btn btn-search">
+                    <button class="btn-search">
                         <i class="fas fa-search"></i>
                         Search
                     </button>
