@@ -40,10 +40,12 @@
         </div>
         <div class="col-3 d-flex justify-content-center align-items-center">
             <div>
-                <button class="btn btn-search">
-                    <i class="fas fa-search"></i>
-                    Search
-                </button>
+                <a href="{{route('search')}}">
+                    <button class="btn btn-search">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </button>
+                </a>
             </div>
         </div>
     </div>

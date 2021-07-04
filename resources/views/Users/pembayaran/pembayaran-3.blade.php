@@ -49,7 +49,7 @@
 
     <div class="row mt-5">
         <div class="col text-center">
-            <a href="" class="btn-continue text-center px-4 mt-5">COMPLETE</a>
+            <a href="{{route('pembayaran-4')}}" class="btn-continue text-center px-4 mt-5">COMPLETE</a>
         </div>
     </div>
 </div>

@@ -49,7 +49,7 @@
 
     <div class="row mt-5">
         <div class="col text-center d-flex flex-column align-items-center">
-            <a href="" class="btn-continue disabled text-center px-4 mt-5">COMPLETED</a>
+            <a href="{{route('home')}}" class="btn-continue disabled text-center px-4 mt-5">COMPLETED</a>
             <a href="" class="btn-continue text-center px-4 mt-5">PURCHASE LIST</a>
         </div>
     </div>

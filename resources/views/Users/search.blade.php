@@ -80,46 +80,56 @@
     <!-- Bagian Content Search -->
     <div class="row py-4">
         <div class="col-4">
-            <div class="card-search">
-                <img src="{{asset('images/catalog/rectangle 10.png')}}" alt="" class="card-img-top">
-                <div class="card-body d-flex justify-content-between px-3">
-                    <div>
-                        <p>Private Art Gallery Tour</p>
-                        <p>Jakarta Pusat, DKI Jakarta</p>
-                    </div>
-                    <div class="icon">
-                        <img src="{{asset('images/surface1.png')}}" alt="">
+            <!-- Temp Solution -->
+            <a href="{{route('detail')}}">
+                <!--  -->
+                <div class="card-search">
+                    <img src="{{asset('images/details/rectangle 33.png')}}" alt="" class="card-img-top">
+                    <div class="card-body d-flex justify-content-between px-3">
+                        <div>
+                            <p>2D1N at Wae Rebo Village</p>
+                            <p>Kabupaten Manggarai, NTT</p>
+                        </div>
+                        <div class="icon">
+                            <img src="{{asset('images/surface1.png')}}" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="col-4">
-            <div class="card-search">
-                <img src="{{asset('images/catalog/rectangle 10.png')}}" alt="" class="card-img-top">
-                <div class="card-body d-flex justify-content-between px-3">
-                    <div>
-                        <p>Private Art Gallery Tour</p>
-                        <p>Jakarta Pusat, DKI Jakarta</p>
-                    </div>
-                    <div class="icon">
-                        <img src="{{asset('images/surface1.png')}}" alt="">
+            <!-- Temp Solution -->
+            <a href="{{route('detail')}}">
+                <div class="card-search">
+                    <img src="{{asset('images/details/rectangle 33.png')}}" alt="" class="card-img-top">
+                    <div class="card-body d-flex justify-content-between px-3">
+                        <div>
+                            <p>2D1N at Wae Rebo Village</p>
+                            <p>Kabupaten Manggarai, NTT</p>
+                        </div>
+                        <div class="icon">
+                            <img src="{{asset('images/surface1.png')}}" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="col-4">
-            <div class="card-search">
-                <img src="{{asset('images/catalog/rectangle 10.png')}}" alt="" class="card-img-top">
-                <div class="card-body d-flex justify-content-between px-3">
-                    <div>
-                        <p>Private Art Gallery Tour</p>
-                        <p>Jakarta Pusat, DKI Jakarta</p>
-                    </div>
-                    <div class="icon">
-                        <img src="{{asset('images/surface1.png')}}" alt="">
+            <!-- Temp Solution -->
+            <a href="{{route('detail')}}">
+                <div class="card-search">
+                    <img src="{{asset('images/details/rectangle 33.png')}}" alt="" class="card-img-top">
+                    <div class="card-body d-flex justify-content-between px-3">
+                        <div>
+                            <p>2D1N at Wae Rebo Village</p>
+                            <p>Kabupaten Manggarai, NTT</p>
+                        </div>
+                        <div class="icon">
+                            <img src="{{asset('images/surface1.png')}}" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
     <!-- Bagian akhir Content Search -->

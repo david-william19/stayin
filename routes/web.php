@@ -32,13 +32,33 @@ Route::get('/packages', function () {
 
 Route::get('/search', function () {
     return view('Users.search');
-});
+})->name('search');
+
 Route::get('/detail', function () {
     return view('Users.details');
-});
+})->name('detail');
+
 Route::get('/pembayaran', function () {
+    return view('Users.pembayaran.pembayaran-1');
+})->name('pembayaran-1');
+
+
+Route::get('/pembayaran2', function () {
+    return view('Users.pembayaran.pembayaran-2');
+})->name('pembayaran-2');
+
+
+
+Route::get('/pembayaran3', function () {
+    return view('Users.pembayaran.pembayaran-3');
+})->name('pembayaran-3');
+
+
+
+Route::get('/pembayaran4', function () {
     return view('Users.pembayaran.pembayaran-4');
-});
+})->name('pembayaran-4');
+
 
 
 // User

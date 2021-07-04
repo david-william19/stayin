@@ -53,7 +53,10 @@
                     </div>
                     <label for="">Guests</label>
                     <input type="text" class="form-control" placeholder="Doe">
-                    <button type="submit" class="btn-buy">Select Package</button>
+                    <!-- <button type="submit" class="btn-buy">Select Package</button> -->
+                    <div class="mt-4">
+                        <a href="{{route('pembayaran-1')}}" class="btn-buy">Select Package</a>
+                    </div>
                 </form>
             </div>
         </div>

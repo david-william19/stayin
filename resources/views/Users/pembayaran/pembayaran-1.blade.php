@@ -87,7 +87,7 @@
         <div class="col">
             <div class="d-flex">
                 <p class="term">By clicking the button below, you have agreed to our Privacy Policy and Terms & Conditions of StayIn.</p>
-                <a href="" class="btn-continue">Continue to Payment</a>
+                <a href="{{route('pembayaran-2')}}" class="btn-continue">Continue to Payment</a>
             </div>
         </div>
     </div>
