@@ -1,8 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Order;
+use App\Models\Product;
+use App\Models\User;
+use App\Models\Rating;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,11 +17,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $product = Product::all();
+    $rating = Rating::all();
+    return view('welcome',compact("product","rating"));
 });
 
-Route::get('/packages', function () {
-    return view('users.packages');
+Route::get('/placetostay', function () {
+    $product = Product::all();
+    return view('welcome',compact("product"));
+});
+
+Route::get('/placetostay', function () {
+    $product = Product::all();
+    return view('welcome',compact("product"));
 });
 
 Auth::routes();
