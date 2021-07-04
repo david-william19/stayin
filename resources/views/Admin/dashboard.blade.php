@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.admin_app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    Admin
-
-    <form action="{{route('logout')}}" method="POST">
-        @csrf
-        <button type="submit" class="btn-register">Logout</button>
-    </form>
-</body>
-
-</html>
+@section('content')
+<div class="container-fluid">
+    <h1>Admin Area</h1>
+    <h1 class="text-black-50">You are logged in!</h1>
+</div>
+@endsection
