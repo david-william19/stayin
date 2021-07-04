@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
@@ -40,4 +41,11 @@ Route::get('/placetostay', function () {
 
 Auth::routes();
 
+// User
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Mitra
+Route::get('mitra/home', [HomeController::class, 'mitraHome'])->name('mitra.home')->middleware('is_mitra');
+
+// Admin
+Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');

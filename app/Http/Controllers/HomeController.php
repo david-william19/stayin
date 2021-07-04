@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function adminHome()
+    {
+        return view('Admin.dashboard');
+    }
+
+    public function mitraHome()
+    {
+        return view('Mitra.dashboard');
+    }
 }
