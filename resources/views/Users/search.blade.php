@@ -9,14 +9,14 @@
                 <label for="exampleInputEmail1">Location</label>
                 <div class="d-flex">
                     <i class="fa fa-map-marker-alt mr-3"></i>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Where are you going?">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$place}}">
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="form-group mt-3 ml-3">
                 <label for="exampleInputEmail1">Date</label>
-                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$date}}">
             </div>
         </div>
         <div class="col">

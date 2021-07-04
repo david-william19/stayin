@@ -22,33 +22,33 @@
 <!-- bagian akhir banner -->
 
 <!-- bagian form pencarian -->
-<div class="container mt-5">
-    <div class="row search-section">
-        <div class="col">
-            <div class="form-group mt-3 ml-3">
-                <label for="exampleInputEmail1">Location</label>
-                <i class="fa fa-map-marker-alt"></i>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Where are you going?">
+<form action="{{route('search')}}" method="get">
+    <div class="container mt-5">
+        <div class="row search-section">
+            <div class="col">
+                <div class="form-group mt-3 ml-3">
+                    <label for="exampleInputEmail1">Location</label>
+                    <i class="fa fa-map-marker-alt"></i>
+                    <input type="text" name="place" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Where are you going?" required>
+                </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="form-group mt-3 ml-3">
-                <label for="exampleInputEmail1">Date</label>
-                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="col">
+                <div class="form-group mt-3 ml-3">
+                    <label for="exampleInputEmail1">Date</label>
+                    <input type="date" name="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
             </div>
-        </div>
-        <div class="col-3 d-flex justify-content-center align-items-center">
-            <div>
-                <a href="{{route('search')}}">
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <div>
                     <button class="btn btn-search">
                         <i class="fas fa-search"></i>
                         Search
                     </button>
-                </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</form>
 <!-- bagian akhir form pencarian -->
 
 <!-- bagian content bundle -->
