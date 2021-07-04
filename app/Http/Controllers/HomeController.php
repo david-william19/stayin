@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Order;
+use App\Models\Product;
+use App\Models\User;
+use App\Models\Rating;
 
 class HomeController extends Controller
 {
@@ -23,7 +27,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        $product = Product::all();
+        $rating = Rating::all();
+        return view('Users.home', compact("product", "rating"));
     }
 
     public function adminHome()

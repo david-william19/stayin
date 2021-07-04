@@ -4,7 +4,7 @@
 <div class="container-fluid" style="height: 100vh;">
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <a href="{{route('welcome')}}">
+            <a href="{{route('home')}}">
                 <img src="{{asset('images/logo.png')}}" class="logo" alt="logo" width="88" />
             </a>
         </div>

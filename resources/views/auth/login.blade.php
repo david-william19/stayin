@@ -50,7 +50,7 @@
         <div class="col">
             <div class="row">
                 <div class="col d-flex justify-content-end">
-                    <a href="{{route('welcome')}}">
+                    <a href="{{route('home')}}">
                         <img src="{{asset('images/logo.png')}}" class="logo" alt="logo" width="88" />
                     </a>
                 </div>

@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Logo -->
+    <link rel="icon" href="{{asset('images/logo.png')}}" type="image/icon type">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Unix | Unique Experience</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

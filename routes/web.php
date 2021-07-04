@@ -19,15 +19,17 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+Auth::routes();
 Route::get('/', function () {
     $product = Product::all();
     $rating = Rating::all();
-    return view('welcome',compact("product","rating"));
-})->name("welcome");
+    return view('Users.home', compact("product", "rating"));
+})->name("home");
 
 Route::get('/packages', function () {
     return view('Users.packages');
-});
+})->name('packages');
+
 Route::get('/search', function () {
     return view('Users.search');
 });
@@ -38,17 +40,6 @@ Route::get('/pembayaran', function () {
     return view('Users.pembayaran.pembayaran-4');
 });
 
-Route::get('/placetostay', function () {
-    $product = Product::all();
-    return view('welcome',compact("product"));
-});
-
-Route::get('/placetostay', function () {
-    $product = Product::all();
-    return view('welcome',compact("product"));
-});
-
-Auth::routes();
 
 // User
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

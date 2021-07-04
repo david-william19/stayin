@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Logo -->
+    <link rel="icon" href="{{asset('images/logo.png')}}" type="image/icon type">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Unix | Unique Experience</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -44,10 +47,25 @@
                 <img src="{{asset('images/logo.png')}}" alt="logo" width="120" />
                 <p class="ml-4 mt-3">Forget Your Work, Let’s Start New Experience!</p>
             </div>
-            <div class="navbar-nav d-flex flex-row">
-                <a class="nav-item nav-link mr-4" href="#">Login</a>
-                <a class="btn-register" href="#">Register</a>
+            <div class="navbar-nav navbar-light d-flex flex-row">
+                <a class="nav-item nav-link underline mr-4" href="{{route('home')}}">New Experience</a>
+                <a class="nav-item nav-link underline" href="{{route('packages')}}">Packages</a>
             </div>
+
+            @if (Auth::check())
+            <div class="navbar-nav d-flex flex-row">
+                <a class="nav-item nav-link mr-4" href="">Hi, {{Auth::User()->name}}</a>
+                <form action="{{route('logout')}}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn-register">Logout</button>
+                </form>
+            </div>
+            @else
+            <div class="navbar-nav d-flex flex-row">
+                <a class="nav-item nav-link mr-4" href="{{route('login')}}">Login</a>
+                <a class="btn-register" href="{{route('register')}}">Register</a>
+            </div>
+            @endif
         </div>
     </nav>
     <!-- end navigation section -->
