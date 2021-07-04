@@ -71,7 +71,7 @@
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                             </div>
                             <button type="submit" class="btn-login">Login</button>
-                            <a href="" class="d-flex justify-content-end mt-4">Forgot Password?</a>
+                            <a href="{{ route('password.request') }}" class="d-flex justify-content-end mt-4">Forgot Password?</a>
                             </method=>
                     </div>
                 </div>
