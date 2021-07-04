@@ -23,7 +23,7 @@ Route::get('/', function () {
     $product = Product::all();
     $rating = Rating::all();
     return view('welcome',compact("product","rating"));
-});
+})->name("welcome");
 
 Route::get('/packages', function () {
     return view('Users.packages');

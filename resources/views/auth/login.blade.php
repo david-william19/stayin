@@ -50,31 +50,34 @@
         <div class="col">
             <div class="row">
                 <div class="col d-flex justify-content-end">
-                    <img src="{{asset('images/logo.png')}}" class="logo" alt="logo" width="88" />
+                    <a href="{{route('welcome')}}">
+                        <img src="{{asset('images/logo.png')}}" class="logo" alt="logo" width="88" />
+                    </a>
                 </div>
             </div>
             <div class="row" style="height: 70%;">
                 <div class="col d-flex flex-column justify-content-center px-5">
                     <div class="mx-4">
-                    <form class="mx-5">
-                    <h3 class="font-weight-bold">Login</h3>
-                    <p>Get new experience!</p>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="davidddwlliam@gmail.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <button type="submit" class="btn-login">Login</button>
-                        <a href="" class="d-flex justify-content-end mt-4">Forgot Password?</a>
-                    </form>
+                        <form class="mx-5" method="POST" action="{{ route('login') }}">
+                            @csrf
+                            <h3 class="font-weight-bold">Login</h3>
+                            <p>Get new experience!</p>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="davidddwlliam@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn-login">Login</button>
+                            <a href="" class="d-flex justify-content-end mt-4">Forgot Password?</a>
+                            </method=>
                     </div>
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <b>No Account Yet? <a href="#" class="ml-1">Register</a></b>
+                <b>No Account Yet? <a href="{{route('register')}}" class="ml-1">Register</a></b>
             </div>
         </div>
     </div>

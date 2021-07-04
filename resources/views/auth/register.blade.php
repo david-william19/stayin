@@ -4,13 +4,16 @@
 <div class="container-fluid" style="height: 100vh;">
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <img src="{{asset('images/logo.png')}}" class="logo" alt="logo" width="88" />
+            <a href="{{route('welcome')}}">
+                <img src="{{asset('images/logo.png')}}" class="logo" alt="logo" width="88" />
+            </a>
         </div>
     </div>
     <div class="row" style="height: 86%;">
         <div class="col p-0">
-            <form class="mx-5">
-                <h3 class="font-weight-bold">Login</h3>
+            <form class="mx-5" method="POST" action="{{ route('register') }}">
+                @csrf
+                <h3 class="font-weight-bold">Register</h3>
                 <p>Get new experience!</p>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
@@ -48,7 +51,7 @@
                 </div>
                 <button type="submit" class="btn-login">Create An Account</button>
                 <div class="d-flex justify-content-center mt-5">
-                    <b class="text-dark">Already have an account? <a href="#" class="ml-1">Login</a></b>
+                    <b class="text-dark">Already have an account? <a href="{{route('login')}}" class="ml-1">Login</a></b>
                 </div>
             </form>
 
