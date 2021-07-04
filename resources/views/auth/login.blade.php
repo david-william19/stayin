@@ -58,20 +58,36 @@
             <div class="row" style="height: 70%;">
                 <div class="col d-flex flex-column justify-content-center px-5">
                     <div class="mx-4">
+
                         <form class="mx-5" method="POST" action="{{ route('login') }}">
                             @csrf
+
                             <h3 class="font-weight-bold">Login</h3>
                             <p>Get new experience!</p>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="davidddwlliam@gmail.com">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                <!-- <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="davidddwlliam@gmail.com"> -->
+                                @error('email')
+                                <span class="invalid-feedback " role="alert">
+                                    <strong class="error-message">{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <!-- <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password" required> -->
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong class="error-message">{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
                             <button type="submit" class="btn-login">Login</button>
+                            @if (Route::has('password.request'))
                             <a href="{{ route('password.request') }}" class="d-flex justify-content-end mt-4">Forgot Password?</a>
+                            @endif
                             </method=>
                     </div>
                 </div>

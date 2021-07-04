@@ -13,13 +13,22 @@
         <div class="col p-0">
             <form class="mx-5" method="POST" action="{{ route('register') }}">
                 @csrf
+
                 <h3 class="font-weight-bold">Register</h3>
                 <p>Get new experience!</p>
+
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="davidddwlliam@gmail.com">
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                    @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong class="error-message">{{ $message }}</strong>
+                    </span>
+                    @enderror
                 </div>
-                <div class="d-flex">
+
+                <!-- <div class="d-flex">
                     <div class="form-group w-50 mr-4">
                         <label for="exampleInputEmail1">First Name</label>
                         <input type="text" class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John">
@@ -29,8 +38,29 @@
                         <label for="exampleInputEmail1">Last Name</label>
                         <input type="text" class="form-control" placeholder="Doe">
                     </div>
+                </div> -->
+
+                <!-- <div class="d-flex"> -->
+                <div class="form-group">
+                    <!-- <div class="form-group w-50 mr-4"> -->
+                    <label for="exampleInputEmail1">Full Name</label>
+                    <input id="text" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                    @error('name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong class="error-message">{{ $message }}</strong>
+                    </span>
+                    @enderror
+                    <!-- <b>If there is no last name, enter the first name</b> -->
+                    <!-- </div> -->
+                    <!-- <div class="form-group w-50">
+                        <label for="exampleInputEmail1">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Doe">
+                    </div> -->
                 </div>
-                <div class="d-flex">
+                <!-- </div> -->
+
+                <!-- <div class="d-flex">
                     <div class="form-group w-25 mr-4">
                         <label for="">Phone Number</label>
                         <select class="custom-select" id="inputGroupSelect01">
@@ -44,15 +74,52 @@
                         <label for=""></label>
                         <input type="text" class="form-control" placeholder="Doe">
                     </div>
-                </div>
+                </div> -->
+
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                    @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong class="error-message">{{ $message }}</strong>
+                    </span>
+                    @enderror
                 </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password Confirmation</label>
+                    <input id="password-confirmation" type="password" class="form-control" name="password_confirmation" required autocomplete="current-password">
+
+                    @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong class="error-message">{{ $message }}</strong>
+                    </span>
+                    @enderror
+                </div>
+
+                <!-- <div class="d-flex">
+                    <div class="form-group w-25 mr-4">
+                        <label for="">Tempat Lahir</label>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>+62</option>
+                            <option value="1">+10</option>
+                            <option value="2">+9</option>
+                            <option value="3">+12</option>
+                        </select>
+                    </div>
+                    <div class="form-group w-25 mt-1">
+                        <label for=""></label>
+                        <input type="text" class="form-control" placeholder="Doe">
+                    </div>
+                </div> -->
+
+
                 <button type="submit" class="btn-login">Create An Account</button>
                 <div class="d-flex justify-content-center mt-5">
                     <b class="text-dark">Already have an account? <a href="{{route('login')}}" class="ml-1">Login</a></b>
                 </div>
+
             </form>
 
         </div>

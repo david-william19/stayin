@@ -44,10 +44,20 @@
                 <a class="nav-item nav-link underline mx-5" href="#">Place to Stay</a>
                 <a class="nav-item nav-link underline" href="#">Packages</a>
             </div>
+            @if (Auth::check())
+            <div class="navbar-nav d-flex flex-row">
+                <a class="nav-item nav-link mr-4" href="">Hi, {{Auth::User()->name}}</a>
+                <form action="{{route('logout')}}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn-register">Logout</button>
+                </form>
+            </div>
+            @else
             <div class="navbar-nav d-flex flex-row">
                 <a class="nav-item nav-link mr-4" href="{{route('login')}}">Login</a>
                 <a class="btn-register" href="{{route('register')}}">Register</a>
             </div>
+            @endif
         </div>
     </nav>
     <!-- end navigation section -->
