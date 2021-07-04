@@ -32,6 +32,13 @@ class HomeController extends Controller
         return view('Users.packages', compact("product", "rating"));
     }
 
+    public function home()
+    {
+        $product = Product::all();
+        $rating = Rating::all();
+        return view('Users.packages', compact("product", "rating"));
+    }
+
     public function adminHome()
     {
         return view('Admin.dashboard');

@@ -19,52 +19,19 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+// Auth Routes
 Auth::routes();
-Route::get('/', function () {
-    $product = Product::all();
-    $rating = Rating::all();
-    return view('Users.packages', compact("product", "rating"));
-})->name("home");
-
-Route::get('/packages', function () {
-    $product = Product::all();
-    $rating = Rating::all();
-    return view('Users.packages', compact("product", "rating"));
-})->name('packages');
-
-Route::get('/search', function () {
-    return view('Users.search');
-})->name('search');
-
-Route::get('/detail', function () {
-    return view('Users.details');
-})->name('detail');
-
-Route::get('/pembayaran', function () {
-    return view('Users.pembayaran.pembayaran-1');
-})->name('pembayaran-1');
-
-
-Route::get('/pembayaran2', function () {
-    return view('Users.pembayaran.pembayaran-2');
-})->name('pembayaran-2');
-
-
-
-Route::get('/pembayaran3', function () {
-    return view('Users.pembayaran.pembayaran-3');
-})->name('pembayaran-3');
-
-
-
-Route::get('/pembayaran4', function () {
-    return view('Users.pembayaran.pembayaran-4');
-})->name('pembayaran-4');
-
-
 
 // User
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+Route::get('/packages', [App\Http\Controllers\HomeController::class, 'home'])->name('packages');
+Route::get('/search', [App\Http\Controllers\Controller::class, 'search'])->name('search');
+Route::get('/detail', [App\Http\Controllers\Controller::class, 'detail'])->name('detail');
+Route::get('/pembayaran', [App\Http\Controllers\Controller::class, 'pembayaran1'])->name('pembayaran-1');
+Route::get('/pembayaran2', [App\Http\Controllers\Controller::class, 'pembayaran2'])->name('pembayaran-2');
+Route::get('/pembayaran3', [App\Http\Controllers\Controller::class, 'pembayaran3'])->name('pembayaran-3');
+Route::get('/pembayaran4', [App\Http\Controllers\Controller::class, 'pembayaran4'])->name('pembayaran-4');
 
 // Mitra
 Route::get('mitra/home', [HomeController::class, 'mitraHome'])->name('mitra.home')->middleware('is_mitra');
