@@ -35,7 +35,9 @@
     <nav>
         <div class="container-fluid d-flex justify-content-around align-items-center py-3">
             <div class="logo">
-                <img src="{{asset('images/logo.png')}}" alt="logo" width="68" />
+                <a href="{{route('welcome')}}">
+                    <img src="{{asset('images/logo.png')}}" alt="logo" width="68" />
+                </a>
             </div>
             <div class="navbar-nav navbar-light d-flex flex-row">
                 <a class="nav-item nav-link underline " href="#">New Experience</a>
@@ -43,8 +45,8 @@
                 <a class="nav-item nav-link underline" href="#">Packages</a>
             </div>
             <div class="navbar-nav d-flex flex-row">
-                <a class="nav-item nav-link mr-4" href="#">Login</a>
-                <a class="btn-register" href="#">Register</a>
+                <a class="nav-item nav-link mr-4" href="{{route('login')}}">Login</a>
+                <a class="btn-register" href="{{route('register')}}">Register</a>
             </div>
         </div>
     </nav>
