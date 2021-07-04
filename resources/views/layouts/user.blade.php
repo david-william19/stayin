@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('css/style-packages.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/4abf6983ae.css">

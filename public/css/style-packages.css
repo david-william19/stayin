@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+ box-sizing: border-box;
+}
+
+.prices {
+    float: right;
+    background: #1891AC;
+    padding: 10px;
+    border-radius: 0 30px;
+}
+
+.bundle-card {
+    border-radius: 30px 30px 0 0;
+}
+
+.packet {
+    font-size: 26px;
+    font-weight: 300;
+    float: left;
+    padding: 30px;
+}
+
+.card-bundle{
+    border-radius: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-detail{
+    border-radius: 30px;
+    color: #fff;
+    background: #1891AC;
+    position: absolute;
+    top: 60%;
+    width: 20.7rem;
+}
+
+.container-bundle{
+    border: 1px solid #1891AC;
+    border-radius: 30px;
+}
+
+.row{
+    width: auto;
+}
+
+
+.description-bundle{
+    padding: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.btn-details{
+    background: #1891AC;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btn-book{
+    background: #253B6E;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.about-card{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #D2ECF9;
+}

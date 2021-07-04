@@ -5,6 +5,8 @@ use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
 use App\Models\Rating;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +22,10 @@ Route::get('/', function () {
     $product = Product::all();
     $rating = Rating::all();
     return view('welcome',compact("product","rating"));
+});
+
+Route::get('/packages', function () {
+    return view('Users.packages');
 });
 
 Route::get('/placetostay', function () {
